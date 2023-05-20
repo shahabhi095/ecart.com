@@ -103,6 +103,8 @@
   display: flex;
   gap: 10px;
 }
+
+/* for small screen */
 @media screen and (max-width: 480px) {
   .IncDec > button {
     padding-left: 10px;
