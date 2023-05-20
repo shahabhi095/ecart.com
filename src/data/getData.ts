@@ -14,17 +14,15 @@ export interface Product {
   title: string;
 }
 
-
-export const getData = async() => {
-  try{
-    const product = await axios.get(
-      `https://dummyjson.com/products`
-    );
-  const allProduct = product.data.products.map((el: Product) => {
-    return { ...el, quantity: 1 };
-  });
+// get Data function
+export const getData = async () => {
+  try {
+    const product = await axios.get(`https://dummyjson.com/products`);
+    const allProduct = product.data.products.map((el: Product) => {
+      return { ...el, quantity: 1 };
+    });
     return allProduct;
-  }catch(err){console.log(err)}
-}
-
-
+  } catch (err) {
+    console.log(err);
+  }
+};

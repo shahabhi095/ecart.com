@@ -1,109 +1,112 @@
-.cardContainer{
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    padding: 20px;
-    width: 80%;
-    margin: auto;
-    background-color: white;
-    font-family: "Open Sans", sans-serif;
+.cardContainer {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
 }
-.cardContainer:hover{
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+.cardContainer:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
-.discount{
-    position: absolute;
-    background-color: #f36b22;
-    border-radius: 50%;
-    width: 30px;
-    text-align: center;
-    padding: 20px;
-    margin: auto;
-
+.discount {
+  position: absolute;
+  background-color: #f36b22;
+  border-radius: 50%;
+  width: 30px;
+  text-align: center;
+  padding: 20px;
+  margin: auto;
 }
-.discount p{
-    font-size: 13px;
-    margin: 0;
-    padding: 0;
-    color: white;
-    font-weight: 600;
+.discount p {
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-weight: 600;
 }
-.Image>img{ 
-     width: 100%;
-     height: 100%;
+.Image > img {
+  width: 100%;
+  height: 100%;
 }
-.Image{
-   transition: width .1s;
-    width: 70%;
-    height: 200px;
-    margin: auto;
-    text-align: center;
+.Image {
+  transition: width 0.1s;
+  width: 70%;
+  height: 200px;
+  margin: auto;
+  text-align: center;
 }
-.Image:hover{
-    width: 80%;
-}
-.title{
-    color: #8393b7;
-    margin: 5px auto;
-    text-align: center;
-    font-weight: 500;
-    margin-top: 10px;
-    transition: width .1s;
-}
-.title:hover{
-color: #535363;
+.Image:hover {
+  width: 80%;
 }
 
-.price{
-    display: flex;
-    gap: 10px;
-    align-items: center;
+.title {
+  color: #8393b7;
+  margin: 5px auto;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 10px;
+  transition: width 0.1s;
 }
-.price>p:first-child{
-   text-decoration: line-through;
-   color: #718a8b;
+.title:hover {
+  color: #535363;
 }
-.price>p:first-child:hover{
+
+.price {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.price > p:first-child {
+  text-decoration: line-through;
+  color: #718a8b;
+}
+.price > p:first-child:hover {
   color: #383848;
 }
-.price>p:last-child{
-    font-size: 20px;
-    font-weight: 700;
+.price > p:last-child {
+  font-size: 20px;
+  font-weight: 700;
 }
 
-.btnBox{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.btnBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.delete{
-    font-size: 25px;
-    color: red;
+.delete {
+  font-size: 25px;
+  color: red;
+  cursor: pointer;
 }
-.IncDec>button{
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(71,9,121,1) 35%, rgba(0,212,255,1) 100%);
-color: white;
-padding-left: 15px;
-padding-right: 15px;
-font-size: 16px;
-border: none;
-border-radius: 5px;
+.IncDec > button {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(71, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
-.IncDec>span{
-    color:black;
-    font-weight: 700;
+.IncDec > span {
+  color: black;
+  font-weight: 700;
 }
-.IncDec{
-display: flex;
-gap: 10px;
+.IncDec {
+  display: flex;
+  gap: 10px;
 }
-
-
-
 @media screen and (max-width: 480px) {
-.IncDec>button{
-  
-padding-left: 10px;
-padding-right: 10px;
-font-size: 14px;
-}
-
+  .IncDec > button {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+  }
 }
